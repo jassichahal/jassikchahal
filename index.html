@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="index.css" />
+    <title>Jassi Chahal's Portfolio</title>
+</head>
+<body>
+    
+            <div class="main">
+                <nav>
+                    <div class="logo">
+                        <!-- <img src="images/jlogo.png" alt="j logo"> -->
+                        <h1>Jassi Chahal</h1>
+                        
+                    </div>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="information">
+                    <div class="overlay">
+
+                    </div>
+                    <img src="images/jassipic.JPG" class="mobile" alt="pic of Jassi">
+                    <div id="circle">
+                        <div class="feature one">
+                            <img src="images/whiteprocessor.png" alt="processor">
+                            <div>
+                                <h2>HTML</h2>
+                                <!-- <p></p> -->
+                            </div>
+                        </div>
+                        <div class="feature two">
+                            <img src="images/whitehub.png" alt="hub">
+                            <div>
+                                <h2>CSS</h2>
+                                <!-- <p></p> -->
+                            </div>
+                        </div>
+                        <div class="feature three">
+                            <img src="images/whitecomputer.png" alt="computer">
+                            <div>
+                                <h2>React</h2>
+                                <p>Stay tuned!</p>
+                            </div>
+                        </div>
+                        <div class="feature four">
+                            <img src="images/whiteheart.png" alt="heart">
+                            <div>
+                                <h2>Coming Soon!</h2>
+                                <!-- <p></p> -->
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+
+                <div class="controls">
+                    <img src="images/uparrow.png" id="UpBtn" alt="">
+                    <h3>Technologies used/using</h3>
+                    <img src="images/uparrow.png" id="DownBtn" alt="">
+                </div>
+
+                <div class="text">
+                
+                    <h3>Welcome to my portfolio!</h3>
+                    <div class="p">
+                        
+                        <margin>
+                            <p>This website is going to be home to all of my current and past projects.<br> I am currently building and updating it at the moment, please check back soon!</p>
+                        </margin>
+                    </div>
+                </div>
+                
+                        
+                </div>
+
+                <script>
+                    var circle = document.getElementById("circle");
+                    var UpBtn = document.getElementById("UpBtn");
+                    var DownBtn = document.getElementById("DownBtn");
+
+                    var rotateValue = circle.style.transform;
+                    var rotateSum;
+
+                    UpBtn.onclick = function()
+                    {
+                        rotateSum = rotateValue + "rotate(-90deg)";
+                        circle.style.transform = rotateSum;
+                        rotateValue = rotateSum;
+                    }
+
+                    DownBtn.onclick = function()
+                    {
+                        rotateSum = rotateValue + "rotate(90deg)";
+                        circle.style.transform = rotateSum;
+                        rotateValue = rotateSum;
+                    }
+
+
+
+                    </script>
+                
+
+</body>
+</html>
+  <!-- <Header>
+                    <h1>Jassi Chahal</h1>
+                    <h2>Aspiring Software Intern, Computer Science student at the University of Wisconsin-Madison</h2> 
+                </Header>
+                <article>
+                <p>Hi there! Thanks for taking a look at my portfolio. Below are the projects I have completed and are currently working on. Enjoy!</p>
+                <p>This is a test text</p>
+            </article>   
+            <Footer>
+                <p>Jassi Chahal 2022, All Rights Reserved</p>
+            </Footer>
+                </div>    -->
